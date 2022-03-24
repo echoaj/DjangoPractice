@@ -1,0 +1,26 @@
+# Blacklist (ignore) files/folders in same directory as the .gitignore file
+/*
+
+# Whitelist files...
+!.gitignore
+!README.md
+!requirements.txt
+
+# Whitelist folder/a/b1/ and folder/a/b2/
+# trailing "/" is optional for folders, may match file though.
+# "/" is NOT optional when followed by a *
+!src
+
+# Ignore all files named .DS_Store or ending with .log
+**/.DS_Store
+**.log
+
+### Django ###
+src/*.log
+src/*.pot
+src/*.pyc
+src/__pycache__/
+src/local_settings.py
+src/db.sqlite3
+src/db.sqlite3-journal
+src/media
